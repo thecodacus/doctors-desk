@@ -1,1 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "theme.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 /* You can add global styles to this file, and also import other style files */
+body {
+	background-color: $background-color;
+	height: 100vh;
+	& * {
+		font-family: "Roboto", system-ui, sans-serif;
+	}
+}

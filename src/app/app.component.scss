@@ -1,0 +1,30 @@
+.application {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.header {
+		height: 5rem;
+		display: flex;
+		flex-direction: row;
+		.spacer {
+			flex: 1;
+		}
+	}
+	.content {
+		display: flex;
+		.page-title {
+			position: absolute;
+			font-size: 2rem;
+		}
+
+		flex: 1;
+		.sidebar {
+			margin: 2rem;
+			margin-top: 0;
+			display: block;
+		}
+		.main {
+			flex: 1;
+		}
+	}
+}

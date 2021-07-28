@@ -1,0 +1,31 @@
+.card {
+	width: fit-content;
+	min-width: 17rem;
+	background-color: white;
+	padding: 1rem;
+	.section {
+		display: flex;
+		.avatar {
+			width: 6rem;
+			background-image: url("/assets/images/blank-profile-picture-png.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			border-radius: 50%;
+		}
+		.details {
+			* {
+				font-size: smaller;
+				color: rgb(102, 100, 100);
+			}
+			.name {
+				font-size: larger;
+				font-weight: 400;
+				color: rgb(36, 36, 43);
+			}
+		}
+		.address {
+			font-size: smaller;
+			color: rgb(102, 100, 100);
+		}
+	}
+}

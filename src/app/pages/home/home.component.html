@@ -1,0 +1,9 @@
+<div class="content">
+	<div class="hero">
+		<div class="heroText">Search Patient</div>
+		<app-search-bar (data)="onSearch($event)"></app-search-bar>
+	</div>
+	<div class="results">
+		<app-patient-card *ngFor="let patient of filteredPatients|async" [data]="patient"></app-patient-card>
+	</div>
+</div>
