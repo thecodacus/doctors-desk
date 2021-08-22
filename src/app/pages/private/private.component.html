@@ -1,0 +1,18 @@
+<div class="application">
+	<div class="header">
+		<div class="logo">
+			<app-brand-logo [compact]="true"></app-brand-logo>
+		</div>
+		<div class="spacer"></div>
+		<div class="avatar" *ngIf="generalSvc.getCurrentUser()|async as user">
+			<app-avatar-button [options]="user"></app-avatar-button>
+		</div>
+	</div>
+	<div class="content">
+		<app-sidebar class="sidebar"></app-sidebar>
+		<div class="main">
+			<div class="page-title">{{generalSvc.getCurrentPageName()|async}}</div>
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>

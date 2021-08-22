@@ -11,12 +11,12 @@ export class SidebarComponent implements OnInit {
 		{
 			name: "patients",
 			icon: faUsers,
-			link: "/",
+			link: "/app/patient",
 		},
 		{
 			name: "prescription",
 			icon: faFilePrescription,
-			link: "/prescribe",
+			link: "/app/prescribe",
 		},
 	];
 	constructor() {}
